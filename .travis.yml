@@ -1,0 +1,16 @@
+language: generic
+
+services:
+  - docker
+
+# skip install phase
+install: true
+
+script:
+  - docker build -t ohtuprojektiilmo/e2e-nginx .
+
+deploy:
+  provider: script
+  script: './deploy_dockerhub.sh'
+  on:
+    branch: master
