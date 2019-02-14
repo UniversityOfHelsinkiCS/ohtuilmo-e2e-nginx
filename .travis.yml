@@ -8,7 +8,6 @@ install: true
 
 script:
   - docker build -t ohtuprojektiilmo/e2e-nginx .
-  - "echo 'travis plz' > foo.tmp"
 
 deploy:
   provider: script

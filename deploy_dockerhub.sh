@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 # Deployment script used by Travis (.travis.yml) to push master's image to
 # DockerHub after successful merge
 #
